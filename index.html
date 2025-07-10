@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El DOM Reinventado: Una Aventura Interactiva (CSS-Puro)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="control-menu" class="control-menu">
+    
+    <label for="control-menu" class="etiqueta-menu">
+        <div class="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </label>
+
+    <div class="menu-superpuesto">
+        <nav class="navegacion-menu">
+            <a href="#definicion" class="enlace-menu">¿Qué es?</a>
+            <a href="#caracteristicas" class="enlace-menu">Características</a>
+            <a href="#utilidad" class="enlace-menu">Utilidad</a>
+            <a href="#ventajas" class="enlace-menu">Ventajas</a>
+            <a href="#multimedia" class="enlace-menu">Multimedia</a>
+            <a href="#ejemplos" class="enlace-menu">Ejemplos</a>
+        </nav>
+    </div>
+
+    <div class="contenedor">
+        <header class="seccion-hero">
+            <div class="texto-hero">
+                <h1>El Universo del DOM</h1>
+                <p>Explora la estructura que da vida a la web. Una guía moderna e interactiva para entender el Document Object Model.</p>
+                <a href="#definicion" class="boton-cta">Comenzar el Viaje</a>
+            </div>
+        </header>
+
+        <main class="cuadricula">
+            <section id="definicion" class="item-cuadricula">
+                <i class="fas fa-sitemap icono"></i>
+                <h2>¿Qué es el DOM?</h2>
+                <p>El Modelo de Objetos del Documento es la representación estructurada de tu página web. Imagínalo como un árbol genealógico de todos los elementos HTML, accesible y manipulable a través de lenguajes como JavaScript.</p>
+            </section>
+
+            <section id="caracteristicas" class="item-cuadricula">
+                <i class="fas fa-cogs icono"></i>
+                <h2>Características Clave</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i>Estructura de árbol jerárquica.</li>
+                    <li><i class="fas fa-check-circle"></i>Manipulación dinámica del contenido.</li>
+                    <li><i class="fas fa-check-circle"></i>Independencia del lenguaje de programación.</li>
+                    <li><i class="fas fa-check-circle"></i>Manejo de eventos para interactividad.</li>
+                </ul>
+            </section>
+
+            <section id="utilidad" class="item-cuadricula">
+                <i class="fas fa-rocket icono"></i>
+                <h2>Utilidad y Objetivos</h2>
+                <p>El DOM es el motor de la web dinámica. Permite a los desarrolladores crear experiencias interactivas, actualizando contenido sin recargar la página y respondiendo a las acciones del usuario en tiempo real.</p>
+            </section>
+
+            <section id="ventajas" class="item-cuadricula">
+                <i class="fas fa-star icono"></i>
+                <h2>Ventajas Esenciales</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i>Experiencias de usuario ricas e interactivas.</li>
+                    <li><i class="fas fa-check-circle"></i>Código más mantenible y organizado.</li>
+                    <li><i class="fas fa-check-circle"></i>Separación clara de contenido y presentación.</li>
+                    <li><i class="fas fa-check-circle"></i>Fomenta las buenas prácticas de desarrollo.</li>
+                </ul>
+            </section>
+
+            <section id="multimedia" class="item-cuadricula item-largo">
+                <i class="fas fa-images icono"></i>
+                <h2>Multimedia Explicativa</h2>
+                <div class="contenedor-media">
+                    <div class="item-media">
+                        <h3>Visualizando el Árbol del DOM</h3>
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Visualización del Árbol del DOM">
+                    </div>
+                    <div class="item-media">
+                        <h3>El DOM en Acción</h3>
+                        <iframe src="https://www.youtube.com/embed/wiozYyXQEVk" title="¿Qué es el DOM?" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ejemplos" class="item-cuadricula item-largo">
+                <i class="fas fa-code icono"></i>
+                <h2>Ejemplos Prácticos</h2>
+                <p>Observa cómo JavaScript interactúa con el DOM para crear contenido dinámico. Este es un ejemplo simple de cómo cambiar el texto de un elemento:</p>
+                <pre><code class="language-javascript">
+// Seleccionamos el elemento con el id 'titulo'
+const miTitulo = document.getElementById('titulo');
+
+// Cambiamos su contenido de texto
+miTitulo.textContent = '¡El DOM ha sido modificado!';
+                </code></pre>
+            </section>
+
+        </main>
+
+        <footer class="pie-pagina">
+            <p>Creador: <strong>Paúl Antamba</strong>.</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>
